@@ -77,7 +77,7 @@
         <button>Submit</button>
     </form>
 
-    <h2>Validations Demo</h2>
+    <h2>Required Inputs</h2>
     <form action="/dummy">
         <label for="first">Enter Username</label>
         <input type="text" name="first" id="first" required>
@@ -86,10 +86,16 @@
             <input type="text" id="username" name="username">
         </p>
         <p>
-            <input type="email" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url" required>
         </p>
         <P>
             <button>Submit</button>
+            
         </P>
 
 
