@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1> <!-- form as header-->
+    <form action="/search">
+        <!-- action to search -->
+        <p>
+            <label for="username">Enter a username:</label> <!-- label to know what it is-->
+            <input id="username" type="text" placeholder="Username" name="username">
+            <!-- linking username label with the id so user and input-->
+        </p>
+        <p>
+            <label for="password">Enter a password:</label> <!-- password label-->
+            <input id="password" type="password" placeholder="Password" name="password">
+            <!-- linking password label with the id-->
+        </p>
+        <p>
+            <button>Submit</button> <!-- creates a submit button-->
+        </p>
+
+    </form>
+
+    <h2>Hijacking Searches</h2> <!-- header-->
+
+    <h3 style="color: red"> Search Reddit</h3> <!-- header -->
+    <form action="https://www.reddit.com/search">
+        <!-- goes through reddit search-->
+        <input type="text" name="q"> <!-- input text that user input-->
+        <button style="background-color: rebeccapurple">Search Reddit</button> <!-- button to search-->
+    </form>
+
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <!-- goes through google search-->
+        <input type="text" name="q"> <!-- input name type-->
+        <!-- name depends what is shown on website -->
+        <!-- when searching something will show google.com/search?q-->
+        <button>Search Google</button> <!-- button to search google-->
+    </form>
+
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <!-- goes through youtube-->
+        <input type="text" name="search_query"> <!-- input name type-->
+        <button>Search Youtube</button> <!-- button to search-->
+    </form>
+
+    <h2>Agree to Terms</h2>
+
+    <form action="/acknowledgment">
+        <!-- acknowledgment -->
+        <input type="checkbox" name="agree_terms" id="agree"> <!-- creates type -->
+        <label for="agree">I agree to the terms above</label> <!-- label for the checkbox-->
+        <p>
+
+            <label for="midget">Midget:</label>
+            <input type="radio" name="size" id="midget" value="midget">
+            <label for="monkey">Monkey:</label>
+            <input type="radio" name="size" id="monkey" value="monkey">
+            <label for="jewbagel">Jewbagel:</label>
+            <input type="radio" name="size" id="jewbagel" value="jewbagel">
+        </p>
+        <P>
+            <label for="">Please Select an Entree</label>
+            <select name="monktards" id="monktards">
+                <!-- creates name type-->
+                <option value="option">Please select an option</option> <!-- makes drop down options-->
+                <option value="yazzy">Yazzy McDaddy</option>
+                <option value="moosy">Moosy McPoosy</option>
+                <option value="shmee">Shmee Mcmidget</option>
+            </select>
+        <p>
+            <label for="midgetness">Midgtness level:</label>
+            <input type="range" id="midgetness" min="0" max="100" name="Midgetlevel"> <!-- dragg the amount -->
+        </p>
+        <label for="requests">Special Requests?</label> <!-- box for inputs -->
+        <textarea id="requests" rows="2" name="Requests?" placeholder="Please enter your information"></textarea>
+        <!-- creates text box for special request-->
+        </P>
+        <button>Submit</button>
+        <!-- submit button
+        -->
+    </form>
+
+    <h2>Required Inputs</h2> <!-- name of header-->
+    <form action="/dummy">
+        <label for="first">Enter Username</label> <!-- Llabel-->
+        <input type="text" name="first" id="first" required> <!-- required inputs or cant submit-->
+        <p>
+            <label for="username">Password</label>
+            <input type="text" id="username" name="username"> <!-- username -->
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <!-- email -->
+        </p>
+        <p>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url" required> <!-- url -->
+        </p>
+        <P>
+            <button>Submit</button> <!-- submit button -->
+
+        </P>
+
+
+
+    </form>
+    <footer>
+        <h2></h2>
+        <a href="index.html">Go Home </a> <!-- go back to index page-->
+    </footer>
+
+</body>
+
+</html>
